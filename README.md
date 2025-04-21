@@ -7,9 +7,9 @@ Here is my final portfolio for my Web Development Class at Bates College.
 
 Web Dev Final (1) PDF: This PDF highlights some of the different things I did over the semester. It provides a discussion and example of each concept we went over during the class. It also has the responses for the question prompts asked for the final.
 
-Example 0: Basic introduction outputs using HTML, CSS, and Javascript
+Example 0: Basic introduction outputs using HTML, CSS, and Javascript.
 
-Example 1.2: A Chess website using Cursor V2, Bootstrap, Talinwind, React, and ShadCN/UI
+Example 1.2: A Chess website using Cursor V2, Bootstrap, Talinwind, React, and ShadCN/UI.
 
 Example 2.2: An authentication website created using Cursor V2, tailwind, react, HTML, Javascript, CSS, and firebase. It stores information entered by the user in firestore.
 
