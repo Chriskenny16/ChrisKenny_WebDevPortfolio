@@ -1,0 +1,155 @@
+/* App styles are handled by Tailwind CSS */
+
+/* Chess board container */
+.chess-board-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Chess board squares - chess.com dark theme colors */
+.black-3c85d {
+  background-color: #4b7399 !important;
+  color: #dae0e6 !important;
+}
+
+.white-1e1d7 {
+  background-color: #dae0e6 !important;
+  color: #4b7399 !important;
+}
+
+/* Chess piece styling */
+.piece-417db {
+  cursor: grab;
+  transition: transform 0.1s ease-in-out;
+}
+
+.piece-417db:hover {
+  transform: scale(1.1);
+}
+
+/* Highlighted squares - dark theme */
+.highlight-capture {
+  background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+.highlight-move {
+  background-color: rgba(255, 255, 0, 0.2) !important;
+}
+
+/* Game status message */
+.game-status {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  background-color: #2c3e50;
+  font-weight: 600;
+  color: #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset button styling */
+.reset-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background-color: #4b7399;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #5a8ab3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling for the chess game */
+.chess-card {
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid #2d3748;
+}
+
+/* Chess board header */
+.chess-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid #2d3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+}
+
+/* Chess board title */
+.chess-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  letter-spacing: -0.025em;
+}
+
+/* App container styling */
+#root {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding: 2rem;
+}
+
+/* Main content container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Button styling */
+button {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+/* Counter styling */
+.counter {
+  background-color: #2c3e50;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2d3748;
+  color: #e5e7eb;
+}
+
+/* Button variants container */
+.button-variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .chess-board-container {
+    max-width: 100%;
+  }
+  
+  .chess-title {
+    font-size: 1.25rem;
+  }
+  
+  .game-status {
+    padding: 0.5rem 1rem;
+  }
+}
