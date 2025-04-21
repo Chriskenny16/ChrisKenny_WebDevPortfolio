@@ -1,0 +1,54 @@
+div.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.menu_item {
+    border: 2px solid black;
+    border-radius: 10% / 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+div#menu_html {
+    /* person A should choose a new color and push to github;
+       later, person D should choose a different color and
+       push to github */
+    background-color: red;
+}
+
+div#menu_css {
+    /* person B should choose a new color and push to github;
+       later, person A should choose a different color and
+       push to github */
+    background-color: green;
+}
+
+div#menu_js {
+    /* person C should choose a new color and push to github;
+       later, person B should choose a different color and
+       push to github */
+    background-color: purple;
+}
+
+div#menu_git {
+    /* person D should choose a new color and push to github;
+       later, person C should choose a different color and
+       push to github */
+    background-color: blue;
+}
+
+div.info_box {
+    /* feel free to change this however you and/or teammates want */
+    border: 2px solid black;
+    border-radius: 25% 10%;
+    background-color: lightblue;
+    padding: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+/* you may want to add more individualized CSS per the info box you're
+responsible for... */

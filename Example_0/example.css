@@ -1,0 +1,22 @@
+body {
+    color: blue;
+}
+h1 {
+    background-color: grey; color:red
+}
+
+div{
+    width: 400px;
+}
+
+.myheader {
+    background-color: white; color: black;
+}
+
+#header1{
+    background-color: green; color: yellow;
+}
+
+ul i {
+    color: yellowgreen;
+}

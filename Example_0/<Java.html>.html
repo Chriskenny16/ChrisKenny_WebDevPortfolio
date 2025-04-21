@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First JavaScript</title>
+
+        <script>
+            //comment in Java
+            // is what # is in python
+            /* comment with group*/
+            // example 0: alert vs console.log
+            // All java script code ends with ;
+            //the order where you put your code is important in Java
+
+            //alert("here is an alert");
+            console.log("Here is a consol log");
+        </script>
+
+        <script>
+            // #1 Variable -- let, const, use string, f-strings
+            "use strict";
+            let my_variable; //declaring a variable for later use (can now assign)
+            my_variable = 42;
+            console.log(my_variable);
+            const other_variable = 99;
+            // other_variable = 202 - you can't change the value of a const, you can of a let
+
+            console.log(`value of my_variable = ${my_variable}`);
+            console.log(other_variable);
+
+        </script>
+
+        <script>
+            // #2: Functions in JavaScript
+            function consoleANum(value) {
+                console.log(`parameter "value" = ${value}`);
+            }
+            consoleANum(999999);
+            /* this function does */
+
+            function multiplyNums(val1, val2) {
+                val1 *= 2;
+                val2 *= 3;
+                return [val1, val2];
+            }
+
+            let result = multiplyNums(33, 44);
+            console.log(`val1 now = ${result[0]}`);
+            console.log(`val2 now = ${result[1]}`);
+
+        </script>
+
+        <script>
+           function trad_fun(val) {return val + 100;}
+           const my_lam = (val) => val + 200;
+           
+           console.log(`result of trad_fun(11) = ${trad_fun(11)}`);
+           console.log(`result of my_lam(22) = ${my_lam(22)}`);
+
+        </script>
+
+        <script>
+            "use strict";
+            let my_array = [11, 22, 33, "forty-four"];
+            //              0   1   2   3
+            console.log(`length of my_array = ${my_array.length}`);
+            for (let item of my_array) {
+                console.log(item);
+            }
+        
+            for (let i = 0; i < my_array.length; i++) {
+                console.log(my_array[i]);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="my_h1"> Here is a header</h1>
+        <script>
+            "use strict";
+            document.getElementsbyID("my_h1");
+            let elem = document.getelementbyid("my_h1");
+            elem.innerHTML = "changing the header";
+
+        </script>
+
+    </body>
+</html>

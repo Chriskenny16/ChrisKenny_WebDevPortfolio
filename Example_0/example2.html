@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Example</title>
+    <style>
+      .wrapper {
+        background-color: lightgrey;
+        position: absolute;
+        width: 400px;
+        height: 200px;
+      }
+      .outer_ring {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+      }
+      .inner_ring {
+        height: 80%;
+        width: 80%;
+        margin: auto;
+        border-radius: 50%;
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!---->
+      <div
+        class="outer_ring"
+        style="background-color: blue; margin-left: 1px; z-index: 1"
+      >
+        <div class="inner_ring"></div>
+      </div>
+      <div
+        class="outer_ring"
+        style="background-color: black; margin-left: 80px; z-index:1"
+      >
+        <div class="inner_ring"></div>
+      </div>
+      <div
+        class="outer_ring"
+        style="background-color: red; margin-left: 200px"
+        >
+       <div 
+       class="inner_ring"></div>
+
+       <div
+        class="outer_ring"
+        style="background-color: yellow; margin-left: 1px"
+        >
+        <div
+        
+      <!---->
+    </div>
+  </body>
+</html>

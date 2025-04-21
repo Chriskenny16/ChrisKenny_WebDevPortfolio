@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --my_start_color: orange;
+                --my_end_color: yellow;
+            }
+            div.overall {
+                display:grid;
+                place-items: center;
+                height: 100vh
+            }
+            div.container {
+                width: 400px; 
+                height: 200px;
+                background: lightblue;
+                border:1px solid black;
+                padding:10px;
+                display: flex;
+                flex-direction: row;
+                /* flex-wrap: wrap-reverse; */
+                justify-content: space-between;
+                align-items: center;
+            }
+            div.item {
+                background-color: rgb(253, 253, 253);
+                border: 1px solid black;
+                padding: 5px;
+            }
+            a::after {
+                content: attr(href);
+            }
+
+            div.mydiv {
+                width:clamp(100px, 50%, 200px);
+                height: 40px;
+                background-color: red;
+                transform: rotatez(90);
+            }
+            div.square {
+                background-color: var(--my_start_color);
+                width: 100px;
+                height: 100px;
+                border-radius: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 750ms ease-in-out .01s;
+                
+            }
+
+            div.square:hover {
+                background-color: var(--my_end_color);
+                transform: scale(2.0); rotate: 200deg;
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="overall">
+        <div class="container">
+            <div class="item" style="order:3; flex:1;">London</div>
+            <div class="item" style="flex:1">Italy</div>
+            <div class="item" style="flex:1">Denmark</div>
+            </div>
+
+            <div class="square">Hola</div>
+            <div class="mydiv">Hello</div> 
+            <div class="mydiv">Ciao</div>
+
+
+
+        <a href="https://www.bates.edu"></a>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            "use strict";
+            function loadScript(src, callback) {
+                let the_script = document.createElement("script");
+                the_script.src = src;
+                the_script.onload = () => callback(the_script);
+                the_script.error = () => new Error("Something Wrong");
+                document.head.append(the_script);
+            }
+
+            // loadScript("./timeout.js");
+            // doit("after loadScript");
+
+            loadScript("timeout.js", () => { 
+                doit
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Here is a message!</h1>
+    </body>
+</html>
