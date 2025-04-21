@@ -1,0 +1,55 @@
+/* File: GenreCarousel.css */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 20px;
+}
+
+.carousel .carousel-indicators button {
+  height: 10px;
+  background: #1bffcd;
+  border-radius: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Add some EDM-themed styling */
+.carousel-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption h3 {
+  color: #ff00cc;
+  text-shadow: 0 0 5px #00ffff;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Add some responsive styling */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px;
+  }
+  
+  .carousel-caption {
+    padding: 10px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
