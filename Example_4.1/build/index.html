@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../src/output.css" rel="stylesheet">
+  <style>
+    @import "tailwindcss";
+
+    @theme {
+      --custom-blue: #007BFF;
+      --hover-blue: #0056b3;
+      --highlight-yellow: #FFFF00;
+    }
+
+    @layer base {
+      /* Custom Button Component */
+      .btn-custom {
+        @apply bg-[var(--custom-blue)] text-white font-medium py-2 px-4 rounded;
+        min-width: 150px;
+        transition: background-color 0.3s;
+      }
+
+      .btn-custom:hover {
+        background-color: var(--hover-blue);
+      }
+    }
+
+    @utility flex-center {
+      @apply flex justify-center items-center min-h-screen;
+    }
+
+    @layer components {
+      /* Highlight Feature */
+      .highlight {
+        background-color: var(--highlight-yellow);
+        @apply text-black px-2 py-1 rounded;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen grid place-content-center radial-blue">
+    <div class="bg-emerald-500 w-52 h-52 rounded-full shadow-2xl grid place-content-center">
+        <div class="bg-teal-200 w-32 h-32 rounded-full grid place-content-center">
+            <div class="bg-red-500 w-16 h-16 rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- Expandable Info Box -->
+    <details class="mt-8">
+        <summary class="cursor-pointer text-lg font-bold">Click to expand for more information</summary>
+        <p class="mt-2 text-sm">This is an expandable info box using HTML5 <code>details</code> and <code>summary</code> elements.</p>
+        <p class="highlight">Highlighted text feature incorporated here.</p>
+    </details>
+
+    <!-- Custom Button -->
+    <button class="btn-custom mt-8">Click Me!</button>
+
+    <p class="highlight">This is highlighted text!</p>
+</body>
+</html>

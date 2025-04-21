@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@theme {
+  --custom-blue: #007BFF;
+  --hover-blue: #0056b3;
+}
+
+
+@layer base {
+  .btn-custom {
+    @apply bg-custom-blue text-white font-medium py-2 px-4 rounded;
+    min-width: 150px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-custom:hover {
+    background-color: var(--hover-blue);
+  }
+}
+
+
+@utility flex-center {
+  @apply flex justify-center items-center min-h-screen;
+}
+
+
+@layer components {
+  .highlight {
+    background-color: yellow;
+    @apply text-black;
+  }
+}
